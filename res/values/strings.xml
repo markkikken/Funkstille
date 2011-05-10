@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">FunkStille is designed for android users that frequently cross borders and have to rely on Wi-Fi because of roaming, but can use 3g connectivity in the other country. FunkStille can automatically enable or disable Wi-Fi for you, allowing you to save power. FunkStille also provides some basic configuration settings that the frequent roamer will appreciate.</string>
+    <string name="app_name">FunkStille</string>
+    <string name="enabled">enabled</string>
+    <string name="disabled">disabled</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="statusTitle">Current phone state:</string>
+    <string name="wifi">Wi-Fi</string>
+    <string name="power">Power cord connected</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="roaming">Roaming</string>
+</resources>

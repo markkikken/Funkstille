@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about" />
+
+
+
+	<TableLayout android:id="@+id/StatusTable" android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:scrollbars="vertical" android:stretchColumns="1">
+		<TableRow android:id="@+id/HeaderTableRow" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:gravity="center_horizontal">
+			<TextView android:text="@string/statusTitle" android:id="@+id/statusTitle"></TextView>
+		</TableRow>
+		<TableRow android:id="@+id/WifiTableRow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="@string/wifi" android:id="@+id/wifiText"></TextView>
+			<ToggleButton android:text="@+id/wifiToggleButton" android:id="@+id/wifiToggleButton"
+				android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="none" android:clickable="false"></ToggleButton>
+		</TableRow>
+		<TableRow android:id="@+id/bluetoothTableRow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="@string/bluetooth" android:id="@+id/bluetoothText" android:layout_width="fill_parent"></TextView>
+			<ToggleButton android:text="@+id/bluetoothToggleButton" android:id="@+id/bluetoothToggleButton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="none" android:clickable="false"></ToggleButton>
+		</TableRow>
+		<TableRow android:id="@+id/powerTableRow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="@string/power" android:id="@+id/powerText" android:layout_width="fill_parent"></TextView>
+			<ToggleButton android:text="@+id/powerToggleButton" android:id="@+id/powerToggleButton" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:inputType="none" android:clickable="false" android:textOn="@string/yes"
+				android:textOff="@string/no"></ToggleButton>
+		</TableRow>
+		<TableRow android:id="@+id/roamingTableRow" android:layout_width="wrap_content" android:layout_height="wrap_content">
+			<TextView android:text="@string/roaming" android:id="@+id/roamingText" android:layout_width="fill_parent"></TextView>
+			<ToggleButton android:text="@+id/roamingToggleButton" android:id="@+id/roamingToggleButton" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:inputType="none" android:clickable="false" android:textOn="@string/yes"
+				android:textOff="@string/no"></ToggleButton>
+		</TableRow>
+	</TableLayout>
+</LinearLayout>
