@@ -10,6 +10,10 @@
 			</intent-filter>
 		</activity>
 		
+		
+		
+		
+		
 		<service android:name=".power.PowerCordService"></service>
 		
 		<receiver android:name=".power.DisconnectedReceiver">
