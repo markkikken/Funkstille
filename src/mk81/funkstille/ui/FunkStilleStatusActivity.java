@@ -1,6 +1,7 @@
 package mk81.funkstille.ui;
 
 import mk81.funkstille.R;
+import mk81.funkstille.SystemStatusFacade;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;

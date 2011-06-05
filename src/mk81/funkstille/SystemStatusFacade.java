@@ -1,4 +1,4 @@
-package mk81.funkstille.ui;
+package mk81.funkstille;
 
 import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
@@ -19,9 +19,9 @@ import android.os.BatteryManager;
  */
 public class SystemStatusFacade {
 
-    private WifiManager wifiManager;
-    private ConnectivityManager connectivityManager;
-    private BluetoothAdapter bluetoothAdapter;
+    protected WifiManager wifiManager;
+    protected ConnectivityManager connectivityManager;
+    protected BluetoothAdapter bluetoothAdapter;
 
     private volatile boolean powerCordPlugged = false;
 
@@ -52,7 +52,7 @@ public class SystemStatusFacade {
     }
 
     public boolean isRoaming() {
-	NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+	NetworkInfo activeNetworkInfo = connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE);
 	if (activeNetworkInfo == null) {
 	    return false;
 	}

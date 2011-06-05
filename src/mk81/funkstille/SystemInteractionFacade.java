@@ -1,8 +1,6 @@
 package mk81.funkstille;
 
-import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
-import android.net.wifi.WifiManager;
 
 /**
  * Responsible for all system interactions initiated from Funkstille itself. There can be multiple instances of this
@@ -11,15 +9,10 @@ import android.net.wifi.WifiManager;
  * @author mark
  * 
  */
-public class SystemInteractionFacade {
-
-    private WifiManager wifiManager;
-    private BluetoothAdapter bluetoothAdapter;
+public class SystemInteractionFacade extends SystemStatusFacade {
 
     public SystemInteractionFacade(final Context context) {
-	this.wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
-
-	this.bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+	super(context);
     }
 
     public void enableBluetooth() {
