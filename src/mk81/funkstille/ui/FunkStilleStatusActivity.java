@@ -1,25 +1,22 @@
-package mk81.funkstille;
+package mk81.funkstille.ui;
 
+import mk81.funkstille.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class FunkStilleActivity extends Activity {
-    private FunkStilleController controller;
+public class FunkStilleStatusActivity extends Activity {
+    private SystemStatusFacade systemFacade;
 
     /** Called when the activity is first created. */
     @Override
     public void onCreate(final Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
-	controller = new FunkStilleController(this);
+	// systemFacade = new SystemStatusFacade(this);
 
 	Log.d(getPackageCodePath(), "Creating activity");
 
 	setContentView(R.layout.main);
-	controller.updateWifiStatus();
-	controller.updateRoamingStatus();
-	controller.updatePowerStatus();
-	// controller.updateBluetoothStatus();
 
     }
 }

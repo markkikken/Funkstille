@@ -1,5 +1,6 @@
 package mk81.funkstille.power;
 
+import mk81.funkstille.SystemInteractionFacade;
 import android.app.IntentService;
 import android.content.Intent;
 import android.os.Handler;
@@ -7,8 +8,10 @@ import android.widget.Toast;
 
 public class PowerCordService extends IntentService {
 
-    private static final String ACTION_CONNECT = "CONNECT";
-    private static final String ACTION_DISCONNECT = "DISCONNECT";
+    protected static final String ACTION_CONNECT = "CONNECT";
+    protected static final String ACTION_DISCONNECT = "DISCONNECT";
+
+    private SystemInteractionFacade systemInteractionFacade;
 
     private Handler handler;
 
@@ -18,6 +21,7 @@ public class PowerCordService extends IntentService {
 
     @Override
     public void onCreate() {
+	this.systemInteractionFacade = new SystemInteractionFacade(this);
 	this.handler = new Handler();
 	super.onCreate();
     }
@@ -25,11 +29,12 @@ public class PowerCordService extends IntentService {
     @Override
     protected void onHandleIntent(final Intent intent) {
 	if (ACTION_CONNECT.equals(intent.getAction())) {
-	    showBurnMessage("Activated Bleutooth");
-
+	    showBurnMessage("Activating Bleutooth");
+	    systemInteractionFacade.enableBluetooth();
 	}
 	if (ACTION_DISCONNECT.equals(intent.getAction())) {
-	    showBurnMessage("Deactivated Bleutooth");
+	    showBurnMessage("Deactivating Bleutooth");
+	    systemInteractionFacade.disableBluetooth();
 	}
     }
 

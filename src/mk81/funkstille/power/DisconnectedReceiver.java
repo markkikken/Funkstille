@@ -9,7 +9,7 @@ public class DisconnectedReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(final Context context, final Intent intent) {
 	Intent serviceIntent = new Intent(context.getApplicationContext(), PowerCordService.class);
-	serviceIntent.setAction("disconnected");
+	serviceIntent.setAction(PowerCordService.ACTION_DISCONNECT);
 	context.startService(serviceIntent);
     }
 }
