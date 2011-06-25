@@ -24,17 +24,21 @@ public class SystemStatusFacade {
     protected BluetoothAdapter bluetoothAdapter;
 
     private volatile boolean powerCordPlugged = false;
+    private BroadcastReceiver powerCordBroadcastReceiver;
+    private Context context;
 
     public SystemStatusFacade(final Context context) {
+	this.context = context;
 	this.wifiManager = (WifiManager) context.getSystemService(Context.WIFI_SERVICE);
 	this.connectivityManager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
 
-	context.registerReceiver(new BroadcastReceiver() {
+	powerCordBroadcastReceiver = new BroadcastReceiver() {
 	    @Override
 	    public void onReceive(final Context context, final Intent intent) {
 		powerCordPlugged = (intent.getExtras().getInt(BatteryManager.EXTRA_PLUGGED) != 0);
 	    }
-	}, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
+	};
+	context.registerReceiver(powerCordBroadcastReceiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
 
 	this.bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
     }
@@ -59,4 +63,10 @@ public class SystemStatusFacade {
 	return activeNetworkInfo.isRoaming();
     }
 
+    /**
+     * Call this method before neglecting the Facade to allow the Facade to clean up resources.
+     */
+    public void cleanUp() {
+	context.unregisterReceiver(powerCordBroadcastReceiver);
+    }
 }

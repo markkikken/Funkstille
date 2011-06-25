@@ -38,4 +38,9 @@ public abstract class FunkStilleIntentService extends IntentService {
 	return systemInteractionFacade;
     }
 
+    @Override
+    public void onDestroy() {
+	systemInteractionFacade.cleanUp();
+	super.onDestroy();
+    }
 }

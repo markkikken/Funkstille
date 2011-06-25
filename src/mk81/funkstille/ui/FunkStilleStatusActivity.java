@@ -11,7 +11,6 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ToggleButton;
@@ -56,8 +55,6 @@ public class FunkStilleStatusActivity extends Activity {
     public void onCreate(final Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
 	systemFacade = new SystemStatusFacade(this);
-
-	Log.d(getPackageCodePath(), "Creating activity");
 
 	setContentView(R.layout.status);
 
@@ -107,6 +104,8 @@ public class FunkStilleStatusActivity extends Activity {
 	unregisterReceiver(bluetoothBroadcastReceiver);
 	unregisterReceiver(roamingBroadcastReceiver);
 	unregisterReceiver(wifiBroadcastReceiver);
+
+	systemFacade.cleanUp();
 
 	super.onDestroy();
     }
