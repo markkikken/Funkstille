@@ -16,16 +16,16 @@
 	<string name="power">Lader aangesloten</string>
 	<string name="bluetooth">Bluetooth</string>
 	<string name="roaming">Roaming</string>
-	<string name="enableBtOnPowerConnect">Zet Bluetooth aan ald de lader wordt aangesloten
+	<string name="enableBtOnPowerConnect">Bluetooth aan als lader aangesloten
 	</string>
 	<string name="enableBtOnPowerConnectSummary">Zet de bleutooth adapter van deze GSM aan als er
 		een laadkabel wordt aangesloten. Het maakt niet uit of deze laakabel
-		van een adapter afkomstig is, of een USB aansluiting betreft</string>
-	<string name="disableBtOnPowerDisconnect">Zet Bluetooth uit als de lader wordt ontkoppeld
+		van een adapter afkomstig is, of dat het een USB aansluiting betreft</string>
+	<string name="disableBtOnPowerDisconnect">Bluetooth uit als lader ontkoppeld
 	</string>
 	<string name="disableBtOnPowerDisconnectSummary">Zet de bluetooth adapter van deze GSM uit als er
 		een laadkabel wordt ontkoppeld. Het maakt niet uit of deze laakabel
-		van een adapter afkomstig is, of een USB aansluiting betreft</string>
+		van een adapter afkomstig is, of dat het een USB aansluiting betreft</string>
 	<string name="enableWifiOnRoamingSummary">Zet de WiFi adapter aan zodra er begonnen wordt met Roaming.</string>
 	<string name="enableWifiOnRoaming">WiFi aan bij Roaming</string>
 	<string name="disableWifiAfterRoamingSummary">Zet de WiFi adapter uit zodra er geen sprake meer is van Roaming.</string>
@@ -33,6 +33,6 @@
 	<string name="settings">Instellingen</string>
 	<string name="disableWifiMessage">WiFi uitzetten omdat we niet meer Roamen</string>
 	<string name="enableWifiMessage">WiFi aanzetten omdat we zijn gaan Roamen</string>
-	<string name="activateBleutoothMessage">Bluetooth aanzetten omdat er een laadkabel aangesloten is</string>
+	<string name="activateBleutoothMessage">Bluetooth aanzetten omdat er een laadkabel aangesloten werd</string>
 	<string name="deactivateBleutoothMessage">Bluetooth uitzetten omdat de laadkabel ontkoppeld werd</string>
 </resources>
