@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="about">Funkstille disables WiFi and Bluetooth as you don\'t
+	<string name="about">Funkstille disables WiFi and Bluetooth when you don\'t
 		need it. Bluetooth can be disabled if not connected to a power cord
 		(carkit). WiFi can be only enabled when the device starts roaming and
 		a 3g connection is not available. Both features can be configured
