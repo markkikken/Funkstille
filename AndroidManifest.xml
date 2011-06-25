@@ -15,7 +15,7 @@
 		<service android:name=".roaming.RoamingService"></service>
 		
 		<receiver android:name=".power.DisconnectedReceiver">
-			<intent-filter>
+			<intent-filter>	    return true;
 				<action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
 			</intent-filter>
 		</receiver>

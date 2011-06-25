@@ -19,4 +19,5 @@
     <string name="enableWifiOnRoaming">Enable WiFi when roaming</string>
     <string name="disableWifiAfterRoamingSummary">Disables the device\'s WiFi adapter once the cellular connection stops roaming (is connected to a home network)</string>
     <string name="disableWifiAfterRoaming">Disable WiFi when not roaming</string>
+    <string name="settings">Settings</string>
 </resources>

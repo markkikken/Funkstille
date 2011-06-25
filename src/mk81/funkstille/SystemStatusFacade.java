@@ -40,7 +40,7 @@ public class SystemStatusFacade {
     }
 
     public boolean isWifiEnabled() {
-	return wifiManager.isWifiEnabled();
+	return wifiManager == null ? false : wifiManager.isWifiEnabled();
     }
 
     public boolean isPowerCordPlugged() {
@@ -48,7 +48,7 @@ public class SystemStatusFacade {
     }
 
     public boolean isBluetoothEnabled() {
-	return bluetoothAdapter.isEnabled();
+	return bluetoothAdapter == null ? false : bluetoothAdapter.isEnabled();
     }
 
     public boolean isRoaming() {

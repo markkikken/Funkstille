@@ -16,19 +16,27 @@ public class SystemInteractionFacade extends SystemStatusFacade {
     }
 
     public void enableBluetooth() {
-	bluetoothAdapter.enable();
+	if (bluetoothAdapter != null) {
+	    bluetoothAdapter.enable();
+	}
     }
 
     public void disableBluetooth() {
-	bluetoothAdapter.disable();
+	if (bluetoothAdapter != null) {
+	    bluetoothAdapter.disable();
+	}
     }
 
     public void enableWifi() {
-	wifiManager.setWifiEnabled(true);
+	if (wifiManager != null) {
+	    wifiManager.setWifiEnabled(true);
+	}
     }
 
     public void disableWifi() {
-	wifiManager.setWifiEnabled(false);
+	if (wifiManager != null) {
+	    wifiManager.setWifiEnabled(false);
+	}
     }
 
 }
