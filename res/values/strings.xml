@@ -1,23 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="about">FunkStille is designed for android users that frequently cross borders and have to rely on Wi-Fi because of roaming, but can use 3g connectivity in the other country. FunkStille can automatically enable or disable Wi-Fi for you, allowing you to save power. FunkStille also provides some basic configuration settings that the frequent roamer will appreciate.</string>
-    <string name="app_name">FunkStille</string>
-    <string name="enabled">enabled</string>
-    <string name="disabled">disabled</string>
-    <string name="yes">yes</string>
-    <string name="no">no</string>
-    <string name="statusTitle">Current phone state:</string>
-    <string name="wifi">Wi-Fi</string>
-    <string name="power">Power cord connected</string>
-    <string name="bluetooth">Bluetooth</string>
-    <string name="roaming">Roaming</string>
-    <string name="enableBtOnPowerConnect">Enable bluetooth when power is connected</string>
-    <string name="enableBtOnPowerConnectSummary">Enables the device\'s bluetooth adapter when a power cable is plugged in. The power cable can both be a regular power adapter or a USB cable</string>
-    <string name="disableBtOnPowerDisconnect">Disable bluetooth when power is disconnected</string>
-    <string name="disableBtOnPowerDisconnectSummary">Disables the device\'s bluetooth adapter when a power cable is unplugged. The power cable can both be a regular power adapter or a USB cable</string>
-    <string name="enableWifiOnRoamingSummary">Enables the device\'s WiFi adapter once the cellular connection starts roaming (is connected to a foreign network)</string>
-    <string name="enableWifiOnRoaming">Enable WiFi when roaming</string>
-    <string name="disableWifiAfterRoamingSummary">Disables the device\'s WiFi adapter once the cellular connection stops roaming (is connected to a home network)</string>
-    <string name="disableWifiAfterRoaming">Disable WiFi when not roaming</string>
-    <string name="settings">Settings</string>
+	<string name="about">FunkStille is designed for android users that
+		frequently cross borders and have to rely on Wi-Fi because of roaming,
+		but can use 3g connectivity in the other country. FunkStille can
+		automatically enable or disable Wi-Fi for you, allowing you to save
+		power. FunkStille also provides some basic configuration settings that
+		the frequent roamer will appreciate.
+	</string>
+	<string name="app_name">FunkStille</string>
+	<string name="enabled">enabled</string>
+	<string name="disabled">disabled</string>
+	<string name="yes">yes</string>
+	<string name="no">no</string>
+	<string name="statusTitle">Current phone state:</string>
+	<string name="wifi">Wi-Fi</string>
+	<string name="power">Power cord connected</string>
+	<string name="bluetooth">Bluetooth</string>
+	<string name="roaming">Roaming</string>
+	<string name="enableBtOnPowerConnect">Enable bluetooth when power is connected</string>
+	<string name="enableBtOnPowerConnectSummary">Enables the device\'s bluetooth adapter when a
+		power cable is plugged in. The power cable can both be a regular power
+		adapter or a USB cable
+	</string>
+	<string name="disableBtOnPowerDisconnect">Disable bluetooth when power is disconnected
+	</string>
+	<string name="disableBtOnPowerDisconnectSummary">Disables the device\'s bluetooth adapter when a
+		power cable is unplugged. The power cable can both be a regular power
+		adapter or a USB cable
+	</string>
+	<string name="enableWifiOnRoamingSummary">Enables the device\'s WiFi adapter once the
+		cellular connection starts roaming (is connected to a foreign network)
+	</string>
+	<string name="enableWifiOnRoaming">Enable WiFi when roaming</string>
+	<string name="disableWifiAfterRoamingSummary">Disables the device\'s WiFi adapter once the
+		cellular connection stops roaming (is connected to a home network)
+	</string>
+	<string name="disableWifiAfterRoaming">Disable WiFi when not roaming</string>
+	<string name="settings">Settings</string>
+	<string name="disableWifiMessage">Deactivating WiFi because we are no longer roaming
+	</string>
+	<string name="enableWifiMessage">Activating WiFi because we started roaming</string>
+	<string name="activateBleutoothMessage">Activating Bleutooth because powercord has been
+		plugged in</string>
+	<string name="deactivateBleutoothMessage">Deactivating Bleutooth because powercord has been unplugged</string>
 </resources>
