@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="about">FunkStille is designed for android users that
-		frequently cross borders and have to rely on Wi-Fi because of roaming,
-		but can use 3g connectivity in the other country. FunkStille can
-		automatically enable or disable Wi-Fi for you, allowing you to save
-		power. FunkStille also provides some basic configuration settings that
-		the frequent roamer will appreciate.
+	<string name="about">Funkstille disables WiFi and Bluetooth as you don\'t
+		need it. Bluetooth can be disabled if not connected to a power cord
+		(carkit). WiFi can be only enabled when the device starts roaming and
+		a 3g connection is not available. Both features can be configured
+		separately.
 	</string>
 	<string name="app_name">FunkStille</string>
 	<string name="enabled">enabled</string>
@@ -17,12 +16,12 @@
 	<string name="power">Power cord connected</string>
 	<string name="bluetooth">Bluetooth</string>
 	<string name="roaming">Roaming</string>
-	<string name="enableBtOnPowerConnect">Enable bluetooth when power is connected</string>
+	<string name="enableBtOnPowerConnect">Enable bluetooth when plugged</string>
 	<string name="enableBtOnPowerConnectSummary">Enables the device\'s bluetooth adapter when a
 		power cable is plugged in. The power cable can both be a regular power
 		adapter or a USB cable
 	</string>
-	<string name="disableBtOnPowerDisconnect">Disable bluetooth when power is disconnected
+	<string name="disableBtOnPowerDisconnect">Disable bluetooth when unplugged
 	</string>
 	<string name="disableBtOnPowerDisconnectSummary">Disables the device\'s bluetooth adapter when a
 		power cable is unplugged. The power cable can both be a regular power
@@ -41,6 +40,8 @@
 	</string>
 	<string name="enableWifiMessage">Activating WiFi because we started roaming</string>
 	<string name="activateBleutoothMessage">Activating Bleutooth because powercord has been
-		plugged in</string>
-	<string name="deactivateBleutoothMessage">Deactivating Bleutooth because powercord has been unplugged</string>
+		plugged in
+	</string>
+	<string name="deactivateBleutoothMessage">Deactivating Bleutooth because powercord has been
+		unplugged</string>
 </resources>

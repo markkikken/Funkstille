@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="about">FunkStille zet WiFi en Bluetooth uit als u het niet
+		nodig heeft. Bluetooth wordt alleen geactiveerd als er een lader (carkit) wordt
+		aangesloten. WiFi wordt alleen gebruikt als Roaming actief is en er
+		dus geen gebruik gemaakt kan worden van 3g. Beide functies zijn
+		configureerbaar.
+	</string>
+	<string name="app_name">FunkStille</string>
+	<string name="enabled">aan</string>
+	<string name="disabled">uit</string>
+	<string name="yes">ja</string>
+	<string name="no">nee</string>
+	<string name="statusTitle">Huidige status:</string>
+	<string name="wifi">Wi-Fi</string>
+	<string name="power">Lader aangesloten</string>
+	<string name="bluetooth">Bluetooth</string>
+	<string name="roaming">Roaming</string>
+	<string name="enableBtOnPowerConnect">Zet Bluetooth aan ald de lader wordt aangesloten
+	</string>
+	<string name="enableBtOnPowerConnectSummary">Zet de bleutooth adapter van deze GSM aan als er
+		een laadkabel wordt aangesloten. Het maakt niet uit of deze laakabel
+		van een adapter afkomstig is, of een USB aansluiting betreft</string>
+	<string name="disableBtOnPowerDisconnect">Zet Bluetooth uit als de lader wordt ontkoppeld
+	</string>
+	<string name="disableBtOnPowerDisconnectSummary">Zet de bluetooth adapter van deze GSM uit als er
+		een laadkabel wordt ontkoppeld. Het maakt niet uit of deze laakabel
+		van een adapter afkomstig is, of een USB aansluiting betreft</string>
+	<string name="enableWifiOnRoamingSummary">Zet de WiFi adapter aan zodra er begonnen wordt met Roaming.</string>
+	<string name="enableWifiOnRoaming">WiFi aan bij Roaming</string>
+	<string name="disableWifiAfterRoamingSummary">Zet de WiFi adapter uit zodra er geen sprake meer is van Roaming.</string>
+	<string name="disableWifiAfterRoaming">WiFi uit na Roaming</string>
+	<string name="settings">Instellingen</string>
+	<string name="disableWifiMessage">WiFi uitzetten omdat we niet meer Roamen</string>
+	<string name="enableWifiMessage">WiFi aanzetten omdat we zijn gaan Roamen</string>
+	<string name="activateBleutoothMessage">Bluetooth aanzetten omdat er een laadkabel aangesloten is</string>
+	<string name="deactivateBleutoothMessage">Bluetooth uitzetten omdat de laadkabel ontkoppeld werd</string>
+</resources>
