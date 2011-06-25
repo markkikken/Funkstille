@@ -15,9 +15,6 @@ public class ConnectivityChangeReceiver extends BroadcastReceiver {
 	if (!concernsMobileNetwork(newNetworkInfo)) {
 	    return;
 	}
-	if (!connectedToNetwork(newNetworkInfo)) {
-	    return;
-	}
 
 	// TODO how to handle change if roaming state is not affected?
 	if (newNetworkInfo.isRoaming()) {
@@ -39,9 +36,5 @@ public class ConnectivityChangeReceiver extends BroadcastReceiver {
 
     private boolean concernsMobileNetwork(final NetworkInfo newNetworkInfo) {
 	return ConnectivityManager.TYPE_MOBILE == newNetworkInfo.getType();
-    }
-
-    private boolean connectedToNetwork(final NetworkInfo newNetworkInfo) {
-	return newNetworkInfo.isConnected();
     }
 }

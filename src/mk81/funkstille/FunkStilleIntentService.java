@@ -21,11 +21,11 @@ public abstract class FunkStilleIntentService extends IntentService {
     }
 
     /**
-     * Does a trick with handlers to allow us to show a burn message from the intentservice.
+     * Does a trick with handlers to allow us to show a toast message from the intentservice.
      * 
      * @param message
      */
-    protected void showBurnMessage(final String message) {
+    protected void showToastMessage(final String message) {
 	handler.post(new Runnable() {
 	    @Override
 	    public void run() {

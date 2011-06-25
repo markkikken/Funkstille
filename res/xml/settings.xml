@@ -1,0 +1,19 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory android:title="@string/bluetooth">
+        	<CheckBoxPreference android:key="@+id/SETTING_ENABLE_BT_ON_POWER_CONNECT" 
+    					    	android:title="@string/enableBtOnPowerConnect"
+        						android:summary="@string/enableBtOnPowerConnectSummary"/>
+	       	<CheckBoxPreference android:key="@+id/SETTING_DISABLE_BT_ON_POWER_DISCONNECT" 
+        						android:title="@string/disableBtOnPowerDisconnect"
+        						android:summary="@string/disableBtOnPowerDisconnectSummary"/>
+        </PreferenceCategory>
+        <PreferenceCategory android:title="@string/wifi">
+        	<CheckBoxPreference android:key="@+id/SETTING_ENABLE_WIFI_ON_ROAMING" 
+    					    	android:title="@string/enableWifiOnRoaming"
+        						android:summary="@string/enableWifiOnRoamingSummary"/>
+	       	<CheckBoxPreference android:key="@+id/SETTING_DISABLE_WIFI_AFTER_ROAMING" 
+        						android:title="@string/disableWifiAfterRoaming"
+        						android:summary="@string/disableWifiAfterRoamingSummary"/>
+        </PreferenceCategory>
+</PreferenceScreen>

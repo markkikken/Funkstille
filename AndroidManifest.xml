@@ -3,14 +3,16 @@
 	package="mk81.funkstille" android:versionCode="1" android:versionName="1.0">
 	<application android:icon="@drawable/icon"
 		android:debuggable="true" android:label="@string/app_name">
-		<activity android:name="ui.FunkStilleStatusActivity" android:label="@string/app_name">
+		<activity android:name=".ui.FunkStilleStatusActivity" android:label="@string/app_name">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
+		<activity android:name=".ui.FunkStilleSettingsActivity" android:label="@string/app_name" />
 
 		<service android:name=".power.PowerCordService"></service>
+		<service android:name=".roaming.RoamingService"></service>
 		
 		<receiver android:name=".power.DisconnectedReceiver">
 			<intent-filter>
@@ -23,11 +25,11 @@
 			</intent-filter>
 		</receiver>
 
-<!-- 		<receiver android:name=".roaming.ConnectivityChangeReceiver"> -->
-<!-- 			<intent-filter> -->
-<!-- 				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
-<!-- 			</intent-filter> -->
-<!-- 		</receiver> -->
+		<receiver android:name=".roaming.ConnectivityChangeReceiver" android:enabled="true">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
 
 	</application>
 	<uses-sdk android:minSdkVersion="8" />

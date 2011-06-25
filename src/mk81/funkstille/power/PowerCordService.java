@@ -1,12 +1,22 @@
 package mk81.funkstille.power;
 
 import mk81.funkstille.FunkStilleIntentService;
+import mk81.funkstille.R;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 public class PowerCordService extends FunkStilleIntentService {
 
     protected static final String ACTION_CONNECT = "CONNECT";
     protected static final String ACTION_DISCONNECT = "DISCONNECT";
+    private SharedPreferences settings;
+
+    @Override
+    public void onCreate() {
+	settings = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+	super.onCreate();
+    }
 
     public PowerCordService() {
 	super("PowerCordService");
@@ -15,12 +25,16 @@ public class PowerCordService extends FunkStilleIntentService {
     @Override
     protected void onHandleIntent(final Intent intent) {
 	if (ACTION_CONNECT.equals(intent.getAction())) {
-	    showBurnMessage("Activating Bleutooth because powercord has been plugged in");
-	    getSystemInteractionFacade().enableBluetooth();
+	    if (settings.getBoolean(String.valueOf(R.id.SETTING_ENABLE_BT_ON_POWER_CONNECT), true)) {
+		showToastMessage("Activating Bleutooth because powercord has been plugged in");
+		getSystemInteractionFacade().enableBluetooth();
+	    }
 	}
 	if (ACTION_DISCONNECT.equals(intent.getAction())) {
-	    showBurnMessage("Deactivating Bleutooth because powercord has been unplugged");
-	    getSystemInteractionFacade().disableBluetooth();
+	    if (settings.getBoolean(String.valueOf(R.id.SETTING_DISABLE_BT_ON_POWER_DISCONNECT), true)) {
+		showToastMessage("Deactivating Bleutooth because powercord has been unplugged");
+		getSystemInteractionFacade().disableBluetooth();
+	    }
 	}
     }
 

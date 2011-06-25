@@ -11,4 +11,12 @@
     <string name="power">Power cord connected</string>
     <string name="bluetooth">Bluetooth</string>
     <string name="roaming">Roaming</string>
+    <string name="enableBtOnPowerConnect">Enable bluetooth when power is connected</string>
+    <string name="enableBtOnPowerConnectSummary">Enables the device\'s bluetooth adapter when a power cable is plugged in. The power cable can both be a regular power adapter or a USB cable</string>
+    <string name="disableBtOnPowerDisconnect">Disable bluetooth when power is disconnected</string>
+    <string name="disableBtOnPowerDisconnectSummary">Disables the device\'s bluetooth adapter when a power cable is unplugged. The power cable can both be a regular power adapter or a USB cable</string>
+    <string name="enableWifiOnRoamingSummary">Enables the device\'s WiFi adapter once the cellular connection starts roaming (is connected to a foreign network)</string>
+    <string name="enableWifiOnRoaming">Enable WiFi when roaming</string>
+    <string name="disableWifiAfterRoamingSummary">Disables the device\'s WiFi adapter once the cellular connection stops roaming (is connected to a home network)</string>
+    <string name="disableWifiAfterRoaming">Disable WiFi when not roaming</string>
 </resources>
